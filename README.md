@@ -12,11 +12,11 @@ Knowledge is a journey, not a destination.
 
 ## FAQ
 
-Q: Why do you write this?
+Q: Why do you write this?  
 A: I don't know.
 
-Q: Why don't you use TeX?
-A: I don't know.
+Q: Why don't you use TeX?  
+A: <del>I don't know.</del><ins>I am using it now.</ins>
 
 ## Author
 
