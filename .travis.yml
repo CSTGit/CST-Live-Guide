@@ -1,4 +1,5 @@
 sudo: required
+language: generic
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended dvipng texlive-latex-recommended
 script:
