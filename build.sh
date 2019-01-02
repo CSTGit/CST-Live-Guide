@@ -27,7 +27,8 @@ makefinal() {
     echo "\end{document}"                      >> build/book.tex
     makepdf /build book
     retval=$?
-    cp build/build/book.pdf build/book.pdf
+    mkdir output
+    cp build/build/book.pdf output/book.pdf
     return $retval
 }
 
