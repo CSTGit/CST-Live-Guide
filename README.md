@@ -1,6 +1,6 @@
 # CST Live Guide
 
-![Repo size](https://img.shields.io/github/repo-size/CSTGit/CST-Live-Guide.svg) ![Downloads](https://img.shields.io/github/downloads/CSTGit/CST-Live-Guide/total.svg) <!--![](http://hits.dwyl.com/CSTGit/CST-Live-Guide.svg)-->
+![Repo size](https://img.shields.io/github/repo-size/CSTGit/CST-Live-Guide.svg) ![Downloads](https://img.shields.io/github/downloads/CSTGit/CST-Live-Guide/total.svg) ![](http://hits.dwyl.com/CSTGit/CST-Live-Guide.svg)
 
 ![Progress](https://img.shields.io/badge/progress-0%25-lightgrey.svg) ![Contributors](https://img.shields.io/github/contributors/CSTGit/CST-Live-Guide.svg) ![I love badges](https://img.shields.io/badge/I%20Love-Badges-green.svg)
 
