@@ -1,8 +1,7 @@
-sudo: required
 language: tex
 git:
   depth: 1
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-recommended
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-latex-recommended
 script:
 - ./build.sh
