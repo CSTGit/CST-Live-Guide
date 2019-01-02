@@ -1,5 +1,5 @@
 sudo: required
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra dvipng texlive-latex-recommended
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended dvipng texlive-latex-recommended
 script:
 - ./build.sh
