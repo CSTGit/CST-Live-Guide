@@ -9,20 +9,21 @@ makepdf() {
 }
 
 makemd() {
-	echo
+    echo
 }
 
 makepreamble() {
-	echo "\documentclass[12pt, a4paper]{book}" >  build/book.tex
-	echo                                       >> build/book.tex
-	echo "\usepackage{pdfpages}"               >> build/book.tex
-	echo                                       >> build/book.tex
-	echo "\begin{document}"                    >> build/book.tex
+    mkdir build
+    echo "\documentclass[12pt, a4paper]{book}" >  build/book.tex
+    echo                                       >> build/book.tex
+    echo "\usepackage{pdfpages}"               >> build/book.tex
+    echo                                       >> build/book.tex
+    echo "\begin{document}"                    >> build/book.tex
 }
 
 makefinal() {
-	echo "\end{document}"                      >> build/book.tex
-	makepdf build/book
+    echo "\end{document}"                      >> build/book.tex
+    makepdf build/book
 }
 
 includepdf() {
@@ -31,7 +32,7 @@ includepdf() {
 }
 
 includemd() {
-	echo
+    echo
 }
 
 build_count
