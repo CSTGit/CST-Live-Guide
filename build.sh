@@ -10,7 +10,8 @@ makepdf() {
 }
 
 makemd() {
-    echo
+    mkdir build$1
+    pandoc -t latex -o build${1%/}/"$2".pdf ."$1"/"$2".md 
 }
 
 makepreamble() {
@@ -35,7 +36,9 @@ includepdf() {
 }
 
 includemd() {
-    echo
+    # TODO: make TableOfContents
+    makemd /"${1%/}" "$2"
+    echo "\includepdf{build/$1/$2.pdf}"           >> build/book.tex
 }
 
 build_count
