@@ -11,7 +11,7 @@ makepdf() {
 
 makemd() {
     mkdir build$1
-    pandoc -t latex -o build${1%/}/"$2".pdf ."$1"/"$2".md 
+    pandoc -t latex -o build${1%/}/"$2".pdf ."$1"/"$2".md
 }
 
 makepreamble() {
@@ -26,19 +26,21 @@ makepreamble() {
 makefinal() {
     echo "\end{document}"                      >> build/book.tex
     makepdf /build book
+    retval=$?
     cp build/build/book.pdf build/book.pdf
+    return $retval
 }
 
 includepdf() {
     # TODO: make TableOfContents
-    makepdf /"${1%/}" "$2"
     echo "\includepdf{build/$1/$2.pdf}"           >> build/book.tex
+    makepdf /"${1%/}" "$2"
 }
 
 includemd() {
     # TODO: make TableOfContents
-    makemd /"${1%/}" "$2"
     echo "\includepdf{build/$1/$2.pdf}"           >> build/book.tex
+    makemd /"${1%/}" "$2"
 }
 
 build_count
