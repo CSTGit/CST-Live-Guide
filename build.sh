@@ -5,7 +5,8 @@ build_count() {
 }
 
 makepdf() {
-    pdflatex --shell-escape -synctex=1 -interaction=nonstopmode -output-directory=build "$1".tex
+    mkdir build$1
+    pdflatex --shell-escape -synctex=1 -interaction=nonstopmode -output-directory=build${1%/} ."$1"/"$2".tex
 }
 
 makemd() {
@@ -23,12 +24,14 @@ makepreamble() {
 
 makefinal() {
     echo "\end{document}"                      >> build/book.tex
-    makepdf build/book
+    makepdf /build book
+    cp build/build/book.pdf build/book.pdf
 }
 
 includepdf() {
-    makepdf "$1"
-    echo "\includepdf{build/$1.pdf}"           >> build/book.tex
+    # TODO: make TableOfContents
+    makepdf /"${1%/}" "$2"
+    echo "\includepdf{build/$1/$2.pdf}"           >> build/book.tex
 }
 
 includemd() {
@@ -38,10 +41,13 @@ includemd() {
 build_count
 
 # Preamble
+rm -r build
 makepreamble
 
 # Write book
-includepdf cover
+# for example: 
+# includepdf 1-NumberBasics b
+includepdf / cover
 
 # End
 makefinal
