@@ -4,10 +4,10 @@ before_install:
 - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
 script:
 - ./build.sh
-deploy:
-  provider: releases
-  file:
-  - build/book.pdf
-  skip_cleanup: true
-  on:
-tags: true
+# deploy:
+#   provider: releases
+#   file:
+#   - build/book.pdf
+#   skip_cleanup: true
+#   on:
+# tags: true
