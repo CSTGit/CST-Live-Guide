@@ -21,10 +21,10 @@ makepreamble() {
         echo "\documentclass[12pt, a4paper]{book}"
         echo ""
         echo "\usepackage{subfiles}"
-        echo "\usepackage{hyperref}"
+        echo "\usepackage[colorlinks=true, urlcolor=blue]{hyperref}"
         echo ""
         echo "\begin{document}"
-        echo "\pagenumbering{gobble}"   
+        echo "\pagenumbering{gobble}"
     )
 }
 
@@ -60,6 +60,8 @@ includetex / cover
 echo "\tableofcontents" >> build/book.tex
 echo "\newpage" >> build/book.tex
 echo "\pagenumbering{arabic}" >> build/book.tex
+includetex "Basic Math/" ChapterIntro
+includetex "Basic Math/" NumericSystem
 
 # End
 makefinal
