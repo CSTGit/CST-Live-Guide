@@ -1,5 +1,7 @@
 # CST Live Guide
 
+[Read the book now!](https://cstgit.github.io/CST-Live-Guide/book.pdf)
+
 ![Repo size](https://img.shields.io/github/repo-size/CSTGit/CST-Live-Guide.svg) [![Downloads](https://img.shields.io/github/downloads/CSTGit/CST-Live-Guide/total.svg) ![](http://hits.dwyl.com/CSTGit/CST-Live-Guide.svg)](https://github.com/CSTGit/CST-Live-Guide/releases) [![Travis CI build](https://api.travis-ci.org/CSTGit/CST-Live-Guide.svg?branch=master)](https://travis-ci.org/CSTGit/CST-Live-Guide)
 
 ![Progress](https://img.shields.io/badge/progress-0%25-lightgrey.svg) [![Contributors](https://img.shields.io/github/contributors/CSTGit/CST-Live-Guide.svg)](https://github.com/CSTGit/CST-Live-Guide/graphs/contributors) [![I love badges](https://img.shields.io/badge/I%20Love-Badges-green.svg)](https://shields.io)
