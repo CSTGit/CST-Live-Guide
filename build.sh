@@ -65,6 +65,7 @@ echo "\newpage" >> build/book.tex
 echo "\pagenumbering{arabic}" >> build/book.tex
 includetex "Basic Math/" ChapterIntro
 includetex "Basic Math/" NumericSystem
+includemd "Deep Learning/" Classification
 
 # End
 makefinal
