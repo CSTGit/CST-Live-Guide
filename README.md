@@ -28,5 +28,5 @@ A: <del>I don't know.</del><ins>I am using it now.</ins>
 
 ## Author
 
-[JNU 15 CST Geno](https://github.com/geno1024)
-[JNU 15 SE littleredhat1997](https://github.com/littleredhat1997)
+[JNU 15 CST Geno](https://github.com/geno1024)  
+[JNU 15 SE Littleredhat](https://github.com/littleredhat1997)
