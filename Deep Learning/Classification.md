@@ -1,6 +1,4 @@
-# Deep learning
-
-## Classification
+# Classification
 
 | Paper | Network | Date | Journal/Conference |
 | ------ | ------ | ------ | ------ |

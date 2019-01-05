@@ -5,6 +5,7 @@ build_count() {
 	    wget -qO build.txt http://$server/CST-Live-Guide
 	else echo LOCAL > build.txt
 	fi
+	cat build.txt
 }
 
 maketex() {
@@ -72,6 +73,7 @@ echo "\newpage" >> build/book.tex
 echo "\pagenumbering{arabic}" >> build/book.tex
 includetex "Basic Math/" ChapterIntro
 includetex "Basic Math/" NumericSystem
+includetex "Deep Learning/" ChapterIntro
 includemd "Deep Learning/" Classification
 
 # End
