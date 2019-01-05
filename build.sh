@@ -24,6 +24,7 @@ makepreamble() {
         echo "\documentclass[12pt, a4paper]{book}"
         echo ""
         echo "\usepackage{subfiles}"
+        echo "\usepackage{longtable}"
         echo "\usepackage[colorlinks=true, urlcolor=blue]{hyperref}"
         echo ""
         echo "\begin{document}"
