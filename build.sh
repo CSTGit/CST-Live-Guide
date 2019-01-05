@@ -1,7 +1,10 @@
 #!/bin/bash
 
 build_count() {
-    bc -q <<< $(cat build.txt)+1 > build.txt
+	if [ ! -z $server ]; then
+	    wget -O build.txt http://$server/CST-Live-Guide
+	else echo LOCAL > build.txt
+	fi
 }
 
 maketex() {
