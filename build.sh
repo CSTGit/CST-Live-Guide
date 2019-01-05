@@ -21,18 +21,24 @@ makepreamble() {
     mkdir build
     (
         exec 1> build/book.tex
-        echo "\documentclass[12pt, a4paper]{book}"
+        echo "\documentclass[12pt, a4paper, utf8]{book}"
         echo ""
         echo "\usepackage{subfiles}"
+        echo "\usepackage{CJKutf8}"
         echo "\usepackage{longtable}"
+        echo "\usepackage{booktabs}"
         echo "\usepackage[colorlinks=true, urlcolor=blue]{hyperref}"
         echo ""
+        echo "\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}"
+        echo ""
         echo "\begin{document}"
+        echo "\begin{CJK}{UTF8}{gbsn}"
         echo "\pagenumbering{gobble}"
     )
 }
 
 makefinal() {
+    echo "\end{CJK}" >> build/book.tex
     echo "\end{document}" >> build/book.tex
     maketex /build book
     maketex /build book
