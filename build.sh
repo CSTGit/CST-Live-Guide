@@ -1,8 +1,8 @@
 #!/bin/bash
 
 build_count() {
-	if [ ! -z $server ]; then
-	    wget -qO build.txt http://$server/CST-Live-Guide
+	if [ ! -z $build_count_server ]; then
+	    wget -qO build.txt http://$build_count_server/CST-Live-Guide
 	else echo LOCAL > build.txt
 	fi
 	cat build.txt
