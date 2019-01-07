@@ -14,6 +14,8 @@
 
 This is a wiki-book like project, intended for helping CST students to build a full, global view of computer science and technology.
 
+CST is the short for Computer Science and Technology, which is a major name in our school.
+
 Knowledge is a journey, not a destination.
 
 ---
