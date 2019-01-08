@@ -28,6 +28,9 @@ A: I don't know.
 Q: Why don't you use T<sub>E</sub>X?  
 A: <del>I don't know.</del><ins>I am using it now.</ins>
 
+Q: Why do you mix Markdown and T<sub>E</sub>X?  
+A: I use T<sub>E</sub>X, but most of our collaborators use Markdown. So I wrote an automatic build system for them.
+
 ## Author
 
 [JNU 15 CST Geno](https://github.com/geno1024)  
