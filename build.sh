@@ -75,6 +75,10 @@ includetex "Basic Math/" ChapterIntro
 includetex "Basic Math/" NumericSystem
 includetex "Deep Learning/" ChapterIntro
 includemd "Deep Learning/" Classification
+includemd "Deep Learning/" SemanticSegmentation
+includemd "Deep Learning/" InstanceSegmentation
+includemd "Deep Learning/" ObjectDetection
+includemd "Deep Learning/" Compression
 
 # End
 makefinal

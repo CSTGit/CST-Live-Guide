@@ -34,4 +34,4 @@ A: I use T<sub>E</sub>X, but most of our collaborators use Markdown. So I wrote 
 ## Author
 
 [JNU 15 CST Geno](https://github.com/geno1024)  
-[JNU 15 SE Littleredhat](https://github.com/littleredhat1997)
+[JNU 15 SE littleredhat](https://github.com/littleredhat1997)
