@@ -14,6 +14,8 @@
 
 This is a wiki-book like project, intended for helping CST students to build a full, global view of computer science and technology.
 
+CST is the short for Computer Science and Technology, which is a major name in our school.
+
 Knowledge is a journey, not a destination.
 
 ---
@@ -25,6 +27,9 @@ A: I don't know.
 
 Q: Why don't you use T<sub>E</sub>X?  
 A: <del>I don't know.</del><ins>I am using it now.</ins>
+
+Q: Why do you mix Markdown and T<sub>E</sub>X?  
+A: I use T<sub>E</sub>X, but most of our collaborators use Markdown. So I wrote an automatic build system for them.
 
 ## Author
 
