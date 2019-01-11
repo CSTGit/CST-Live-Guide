@@ -71,32 +71,43 @@ includetex / cover
 echo "\tableofcontents" >> build/book.tex
 echo "\newpage" >> build/book.tex
 echo "\pagenumbering{arabic}" >> build/book.tex
+
 includetex "Basic Math/" ChapterIntro
 includetex "Basic Math/" NumeralSystem
 includetex "Basic Math/" Arithmetic
 includetex "Basic Math/" BooleanAlgebra
 includetex "Basic Math/" AxiomAndTheorem
+
 includetex "Data Structure/" ChapterIntro
 includetex "Data Structure/" IntegerRepresentation
 includetex "Data Structure/" DecimalRepresentation
 includetex "Data Structure/" CharacterEncoding
 includetex "Data Structure/" DataOrganization
+
 includetex "Hardware Execution/" ChapterIntro
 includetex "Hardware Execution/" LogicGate
 includetex "Hardware Execution/" GateCircuits
 includetex "Hardware Execution/" CPUExecution
 includetex "Hardware Execution/" ExecutionFlowModification
+
 includetex "Compiler Principle/" ChapterIntro
 includetex "Compiler Principle/" ChomskyHierarchy
 includetex "Compiler Principle/" AutomataTheory
 includetex "Compiler Principle/" CodeGeneration
 includetex "Compiler Principle/" ProgramOptimization
+
 includetex "Deep Learning/" ChapterIntro
 includemd "Deep Learning/" Classification
 includemd "Deep Learning/" SemanticSegmentation
 includemd "Deep Learning/" InstanceSegmentation
 includemd "Deep Learning/" ObjectDetection
 includemd "Deep Learning/" Compression
+
+includetex "Real World Develop/" ChapterIntro
+includetex "Real World Develop/" HealthAdvice
+
+includetex "Sentimental Life/" ChapterIntro
+includetex "Sentimental Life/" blank
 
 # End
 makefinal
