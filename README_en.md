@@ -2,7 +2,7 @@
 
 [Read the book now!](https://cstgit.github.io/CST-Live-Guide/book.pdf)
 
-![Repo size](https://img.shields.io/github/repo-size/CSTGit/CST-Live-Guide.svg) [![Downloads](https://img.shields.io/github/downloads/CSTGit/CST-Live-Guide/total.svg)](https://github.com/CSTGit/CST-Live-Guide/releases) ![](http://hits.dwyl.com/CSTGit/CST-Live-Guide.svg) [![Travis CI build](https://api.travis-ci.org/CSTGit/CST-Live-Guide.svg?branch=master)](https://travis-ci.org/CSTGit/CST-Live-Guide)
+![Repo size](https://img.shields.io/github/repo-size/CSTGit/CST-Live-Guide.svg) [![Downloads](https://img.shields.io/github/downloads/CSTGit/CST-Live-Guide/total.svg)](https://github.com/CSTGit/CST-Live-Guide/releases) ![Repository hit](http://hits.dwyl.com/CSTGit/CST-Live-Guide.svg) [![Travis CI build](https://api.travis-ci.org/CSTGit/CST-Live-Guide.svg?branch=master)](https://travis-ci.org/CSTGit/CST-Live-Guide)
 
 ![Progress](https://img.shields.io/badge/progress-0%25-lightgrey.svg) [![Contributors](https://img.shields.io/github/contributors/CSTGit/CST-Live-Guide.svg)](https://github.com/CSTGit/CST-Live-Guide/graphs/contributors) [![I love badges](https://img.shields.io/badge/I%20Love-Badges-green.svg)](https://shields.io)
 
@@ -30,6 +30,9 @@ A: <del>I don't know.</del><ins>I am using it now.</ins>
 
 Q: Why do you mix Markdown and T<sub>E</sub>X?  
 A: I use T<sub>E</sub>X, but most of our collaborators use Markdown. So I wrote an automatic build system for them.
+
+Q: Why do you arrange contents like this?  
+A: I don't know. I am not so good at computer and text. There must be a lot of contents missing, and a lot of unexplainable content arranging. Hope you fire an issue to help me.
 
 ## Author
 
