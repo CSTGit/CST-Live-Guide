@@ -39,8 +39,12 @@ makepreamble() {
 }
 
 makefinal() {
-    echo "\end{CJK}" >> build/book.tex
-    echo "\end{document}" >> build/book.tex
+    (
+        exec 1>> build/book.tex
+        echo "\newpage"
+        echo "\end{CJK}"
+        echo "\end{document}"
+    )
     maketex /build book
     maketex /build book
     retval=$?
