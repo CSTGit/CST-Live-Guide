@@ -33,7 +33,7 @@ makepreamble() {
         echo "\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}"
         echo ""
         echo "\begin{document}"
-        echo "\begin{CJK}{UTF8}{gbsn}"
+        echo "\begin{CJK}{UTF8}{gkai}"
         echo "\pagenumbering{gobble}"
     )
 }
@@ -87,6 +87,9 @@ includetex "Data Structure/" IntegerRepresentation
 includetex "Data Structure/" DecimalRepresentation
 includetex "Data Structure/" CharacterEncoding
 includetex "Data Structure/" DataOrganization
+
+includetex "Data Communication/" ChapterIntro
+includetex "Data Communication/" InterProcessCommunication
 
 includetex "Hardware Execution/" ChapterIntro
 includetex "Hardware Execution/" LogicGate
