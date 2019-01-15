@@ -50,11 +50,8 @@ makefinal() {
     retval=$?
     mkdir output
     cp build/build/book.pdf output/book.pdf
-    git checkout --orphan web
-    git rm -rf .
-    git pull origin web
-    git checkout master
-    git --work-tree=output checkout web -- .
+    git clone --depth=1 https://github.com/CSTGit/CST-Live-Guide.git -b web web
+    cp -r web/* output
     return $retval
 }
 

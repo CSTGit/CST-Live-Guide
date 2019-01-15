@@ -1,4 +1,5 @@
 build/
 output/
+web/
 build.txt
 *.bak
