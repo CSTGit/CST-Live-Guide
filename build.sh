@@ -50,6 +50,7 @@ makefinal() {
     retval=$?
     git clone --depth=1 https://github.com/CSTGit/CST-Live-Guide.git -b web output
     cp -v build/build/book.pdf output/
+    ls output
     return $retval
 }
 
