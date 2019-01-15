@@ -4,7 +4,7 @@ git:
 before_install:
 - sudo apt-get -qq update
 - sudo apt-get -qq install -y --no-install-recommends texlive-latex-recommended texlive-latex-extra latex-cjk-chinese*
-- wget -q $(curl -s https://api.github.com/repos/jgm/pandoc/releases/latest | jq -r '.assets[] | select(.browser_download_url | contains ("linux")) | .browser_download_url')
+- wget -q https://github.com/jgm/pandoc/releases/download/2.5/pandoc-2.5-linux.tar.gz
 - sudo tar xvzf pandoc-* --strip-components 1 -C /usr
 script:
 - ./build.sh
