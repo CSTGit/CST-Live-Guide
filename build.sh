@@ -28,7 +28,7 @@ makepreamble() {
         echo "\usepackage{CJKutf8}"
         echo "\usepackage{longtable}"
         echo "\usepackage{booktabs}"
-        echo "\usepackage[colorlinks=true, urlcolor=blue]{hyperref}"
+        echo "\usepackage[colorlinks=true, urlcolor=blue, pdfauthor={JNU 2015 CS}, pdftitle={CST Live Guide}, pdfsubject={CST Live Guide}, pdfkeywords={Computer Science}, pdfproducer={LaTeX}, pdfcreator={pdflatex, pandoc}]{hyperref}"
         echo ""
         echo "\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}"
         echo ""
@@ -48,8 +48,8 @@ makefinal() {
     maketex /build book
     maketex /build book
     retval=$?
-    git clone https://github.com/CSTGit/CST-Live-Guide.git -b web output
-    cp -v build/build/book.pdf output/
+    git clone --depth=1 https://github.com/CSTGit/CST-Live-Guide.git -b web output
+    cp build/build/book.pdf output/
     return $retval
 }
 
@@ -67,7 +67,7 @@ build_count
 
 # Preamble
 rm -r build
-rm -r output
+rm -rf output
 makepreamble
 
 # Write book
