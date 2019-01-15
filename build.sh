@@ -48,9 +48,8 @@ makefinal() {
     maketex /build book
     maketex /build book
     retval=$?
-    git clone https://github.com/CSTGit/CST-Live-Guide.git -b web output 2>&1
+    git clone https://github.com/CSTGit/CST-Live-Guide.git -b web output
     cp -v build/build/book.pdf output/
-    ls -alF output
     return $retval
 }
 
