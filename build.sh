@@ -50,9 +50,7 @@ makefinal() {
     retval=$?
     mkdir output
     cp build/build/book.pdf output/book.pdf
-    git pull origin web
-    git checkout master
-    git --work-tree=output checkout web -- .
+    git --work-tree=output checkout origin/web -- .
     return $retval
 }
 
