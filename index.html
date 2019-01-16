@@ -360,25 +360,29 @@ See https://github.com/adobe-type-tools/cmap-resources
                 <div class="separator"></div>
                 <div class="row">
                     <span data-l10n-id="cnzz_stat_daily_ip">Daily IP:</span>
-                    <p id="dailyIpField">-</p>
+                    <p id="cnzzDailyIpField">-</p>
                 </div>
                 <div class="row">
                     <span data-l10n-id="cnzz_stat_daily_pv">Daily PV:</span>
-                    <p id="dailyPvField">-</p>
+                    <p id="cnzzDailyPvField">-</p>
                 </div>
                 <div class="row">
                     <span data-l10n-id="cnzz_stat_current">Current Online:</span>
-                    <p id="currentOnlineField">-</p>
+                    <p id="cnzzCurrentOnlineField">-</p>
                 </div>
                 <div class="row">
                     <span data-l10n-id="cnzz_stat_total_ip">Total IP:</span>
-                    <p id="totalIpField">-</p>
+                    <p id="cnzzTotalIpField">-</p>
                 </div>
                 <div class="row">
                     <span data-l10n-id="cnzz_stat_total_pv">Total PV:</span>
-                    <p id="totalPvField">-</p>
+                    <p id="cnzzTotalPvField">-</p>
                 </div>
                 <div class="separator"></div>
+                <div class="row">
+                    <span data-l10n-id="hitcounter_hit">Total hit:</span>
+                    <p id="hitcounterTotalHitField">-</p>
+                </div>
                 <div class="buttonRow">
                     <button id="documentPropertiesClose" class="overlayButton">
                         <span data-l10n-id="document_properties_close">Close</span>
@@ -402,7 +406,19 @@ See https://github.com/adobe-type-tools/cmap-resources
         </div>
         <div id="cnzzStatsOverlay" class="container hidden">
             <span id='cnzz_stat_icon_1275929995'></span><script src='https://s23.cnzz.com/z_stat.php?id=1275929995&online=1' type='text/javascript'></script>
-			<script type="text/javascript" src="https://js.users.51.la/19850791.js"></script>
+            <script type="text/javascript" src="https://js.users.51.la/19850791.js"></script>
+            <span id="hitcounter_count"></span>
+            <script type="text/javascript">
+                (function ()
+                {
+                    let xmlHttp = new XMLHttpRequest();
+                    xmlHttp.open('GET', 'https://hitcounter.pythonanywhere.com/count?url=https%3A%2F%2Fcstgit.github.io%2FCST-Live-Guide', true);
+                    xmlHttp.send();
+                    xmlHttp.onreadystatechange = function () {
+                        document.getElementById("hitcounter_count").innerText = xmlHttp.responseText;
+                    };
+                })();
+            </script>
         </div>
     </div>  <!-- overlayContainer -->
 </div> <!-- outerContainer -->

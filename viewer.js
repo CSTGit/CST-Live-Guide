@@ -235,11 +235,12 @@ function getViewerConfiguration() {
         'pageCount': document.getElementById('pageCountField'),
         'pageSize': document.getElementById('pageSizeField'),
         'linearized': document.getElementById('linearizedField'),
-        'dailyIp': document.getElementById('dailyIpField'),
-        'dailyPv': document.getElementById('dailyPvField'),
-        'currentOnline': document.getElementById('currentOnlineField'),
-        'totalIp': document.getElementById('totalIpField'),
-        'totalPv': document.getElementById('totalPvField')
+        'cnzzDailyIp': document.getElementById('cnzzDailyIpField'),
+        'cnzzDailyPv': document.getElementById('cnzzDailyPvField'),
+        'cnzzCurrentOnline': document.getElementById('cnzzCurrentOnlineField'),
+        'cnzzTotalIp': document.getElementById('cnzzTotalIpField'),
+        'cnzzTotalPv': document.getElementById('cnzzTotalPvField'),
+        'hitcounterTotalHit': document.getElementById('hitcounterTotalHitField')
       }
     },
     errorWrapper: {
@@ -5329,15 +5330,16 @@ var PDFDocumentProperties = function () {
               pageSize = _ref4[6],
               isLinearized = _ref4[7];
 
-          var stat = document.getElementById("cnzz_stat_icon_1275929995").innerText.match(/\[.+?\]/g);
+          var cnzz_stat = document.getElementById("cnzz_stat_icon_1275929995").innerText.match(/\[.+?\]/g);
+		  var hitcounter_stat = document.getElementById("hitcounter_count").innerText;
 
-          var todayIp = parseInt(stat[0].substring(1, stat[0].length - 1));
-          var todayPv = parseInt(stat[1].substring(1, stat[1].length - 1));
-          var yesterdayIp = parseInt(stat[2].substring(1, stat[2].length - 1));
-          var yesterdayPv = parseInt(stat[3].substring(1, stat[3].length - 1));
+          var todayIp = parseInt(cnzz_stat[0].substring(1, cnzz_stat[0].length - 1));
+          var todayPv = parseInt(cnzz_stat[1].substring(1, cnzz_stat[1].length - 1));
+          var yesterdayIp = parseInt(cnzz_stat[2].substring(1, cnzz_stat[2].length - 1));
+          var yesterdayPv = parseInt(cnzz_stat[3].substring(1, cnzz_stat[3].length - 1));
           var diffIp = todayIp - yesterdayIp;
           var diffPv = todayPv - yesterdayPv;
-          var online = parseInt(stat[4].substring(1, stat[4].length - 1));
+          var online = parseInt(cnzz_stat[4].substring(1, cnzz_stat[4].length - 1));
 
           freezeFieldData({
             'fileName': fileName,
@@ -5354,11 +5356,10 @@ var PDFDocumentProperties = function () {
             'pageCount': _this2.pdfDocument.numPages,
             'pageSize': pageSize,
             'linearized': isLinearized,
-            'dailyIp': `${todayIp} (${Math.sign(diffIp) === -1 ? "-" : "+"}${Math.abs(diffIp)})`,
-            'dailyPv': `${todayPv} (${Math.sign(diffPv) === -1 ? "-" : "+"}${Math.abs(diffPv)})`,
-            'currentOnline': `${online}`,
-            'totalIp': 1,
-            'totalPv': 1,
+            'cnzzDailyIp': `${todayIp} (${Math.sign(diffIp) === -1 ? "-" : "+"}${Math.abs(diffIp)})`,
+            'cnzzDailyPv': `${todayPv} (${Math.sign(diffPv) === -1 ? "-" : "+"}${Math.abs(diffPv)})`,
+            'cnzzCurrentOnline': `${online}`,
+            'hitcounterTotalHit': hitcounter_stat,
             '_currentPageNumber': currentPageNumber,
             '_pagesRotation': pagesRotation
           });
