@@ -1,6 +1,6 @@
 # CST 生存指南
 
-[立即尝鲜！](https://cstgit.github.io/CST-Live-Guide/book.pdf)
+[立即尝鲜！](https://cstgit.github.io/CST-Live-Guide/)
 
 ![仓库大小](https://img.shields.io/github/repo-size/CSTGit/CST-Live-Guide.svg) [![下载量](https://img.shields.io/github/downloads/CSTGit/CST-Live-Guide/total.svg)](https://github.com/CSTGit/CST-Live-Guide/releases) ![仓库访问量](http://hits.dwyl.com/CSTGit/CST-Live-Guide.svg) [![Travis CI 构建](https://api.travis-ci.org/CSTGit/CST-Live-Guide.svg?branch=master)](https://travis-ci.org/CSTGit/CST-Live-Guide)
 
