@@ -5329,7 +5329,7 @@ var PDFDocumentProperties = function () {
               pageSize = _ref4[6],
               isLinearized = _ref4[7];
 
-          var stat = document.getElementById("cnzz_stat_icon_1275929995").innerText.match(/\[.?\]/g);
+          var stat = document.getElementById("cnzz_stat_icon_1275929995").innerText.match(/\[.+?\]/g);
 
           var todayIp = parseInt(stat[0].substring(1, stat[0].length - 1));
           var todayPv = parseInt(stat[1].substring(1, stat[1].length - 1));
