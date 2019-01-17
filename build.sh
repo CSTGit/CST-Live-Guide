@@ -105,10 +105,11 @@ includetex "Compiler Principle/" ProgramOptimization
 
 includetex "Deep Learning/" ChapterIntro
 includemd "Deep Learning/" Classification
+includemd "Deep Learning/" ObjectDetection
 includemd "Deep Learning/" SemanticSegmentation
 includemd "Deep Learning/" InstanceSegmentation
-includemd "Deep Learning/" ObjectDetection
-includemd "Deep Learning/" Compression
+includemd "Deep Learning/" MobileNetwork
+includemd "Deep Learning/" PointNetwork
 
 includetex "Real World Develop/" ChapterIntro
 includetex "Real World Develop/" HealthAdvice

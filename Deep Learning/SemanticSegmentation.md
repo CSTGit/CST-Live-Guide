@@ -1,6 +1,4 @@
-# Deep learning
-
-## Semantic Segmentation
+# Semantic Segmentation
 
 | Paper | Network | Release | Conference |
 | ------ | ------ | ------ | ------ |
