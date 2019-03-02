@@ -109,7 +109,7 @@ includemd "Deep Learning/" ObjectDetection
 includemd "Deep Learning/" SemanticSegmentation
 includemd "Deep Learning/" InstanceSegmentation
 includemd "Deep Learning/" MobileNetwork
-includemd "Deep Learning/" PointNetwork
+includemd "Deep Learning/" SearchNetwork
 
 includetex "Real World Develop/" ChapterIntro
 includetex "Real World Develop/" HealthAdvice
